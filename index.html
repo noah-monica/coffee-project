@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +19,60 @@
         <input id="submit" type="submit" />
     </form>
 
-    <table>
+
+    <div class="container">
+        <div class="row float-right">
+            <div class="col-12">
+                <form class="form-inline">
+                    <div class="col-8">
+                    <label class="my-1 mr-2 font-bold" for="inlineFormCustomSelectPref">Roast</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>all</option>
+                        <option value="1">Light</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                    </select>
+                    </div>
+                    <div class="col-8 custom-control custom-checkbox my-1 mr-sm-2">
+                        <!--<input type="checkbox" class="custom-control-input m-4" id="customControlInline">-->
+                       <input class="form-control mr-sm-2 m-4" type="search" placeholder="" aria-label="Search">
+                    </div>
+                   <div class="col-8"><button type="submit" class="btn btn-primary btn-xl btn-block my-1">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row float-right">
+            <div class="col-12">
+                <h1 class="m-auto ">Add a Coffee</h1>
+                <form class="form-inline">
+                    <div class="col-8">
+                    <label class="my-1 mr-2 font-bold" for="inlineFormCustomSelectPref">Roast</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>all</option>
+                        <option value="1">Light</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                    </select>
+                    </div>
+                    <div class="col-8 custom-control custom-checkbox my-1 mr-sm-2">
+                        <!--<input type="checkbox" class="custom-control-input m-4" id="customControlInline">-->
+                       <input class="form-control mr-sm-2 m-4" type="search" placeholder="" aria-label="Search">
+                    </div>
+                   <div class="col-8"><button type="submit" class="btn btn-primary btn-xl btn-block my-1">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-4">-->
+        <!--<form class="form-inline">-->
+            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+            <!--<button type="submit" class="btn btn-primary my-1">Submit</button>-->
+        <!--</form>-->
+    <!--</div>-->
+    <table><div id = "coffes"></div>
         <thead>
             <tr>
                 <th>ID</th>
@@ -26,6 +80,9 @@
                 <th>ROAST</th>
             </tr>
         </thead>
+
+
+
         <tbody id="coffees"></tbody>
     </table>
 
