@@ -1,3 +1,29 @@
+body{
+   background-color: ghostwhite;
+}
+.container{
+    /*background-image: url("coffe-beans-background-PAKNHXV.jpg");*/
+    background-repeat: no-repeat;
+    background-size:50% 600px;
+}
+.container::after{
+    content: "";
+    background: url("coffee-background-PU68ZDP.jpg");
+    background-repeat: repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.container img{
+    width: 800px;
+    height: 500px;
+    opacity: 0.5;
+    filter: alpha(opacity=50)
+}
 table {
     border-collapse: collapse;
     margin: 15px 0;
