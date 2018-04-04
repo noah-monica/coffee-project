@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><center>Coffee!</center></h1>
+    <h1 class="text-dark"><center>Coffee!</center></h1>
     <hr>
 <div class="container">
     <div class="row">
     <div class="col-12">
         <div class="col-6 float-right">
             <div class="form-group">
-                <label for="roast-selection">Roast</label>
+                <label for="roast-selection" class="text-white font-weight-bold">Roast</label>
                 <select class="form-control" id="roast-selection">
                     <option>all</option>
                     <option>light</option>
@@ -22,25 +22,25 @@
                     <option>dark</option>9
                 </select>
             </div>
-            <label for="submit">Coffee Name</label>
+            <label for="submit" class="text-white font-weight-bold">Coffee Name</label>
             <div class="active-cyan-4 mb-4">
                 <input id='input-coffee' class="form-control" type="text" placeholder="Search" aria-label="Search">
             </div>
-            <button id="submit" type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+            <button id="submit" type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
             <div class="form-group">
-                <h1><center>Add a Coffee</center></h1>
-                <label for="roast-selection">Roast</label>
+                <h1 class="text-light"><center>Add a Coffee</center></h1>
+                <label for="roast-selection" class="text-white font-weight-bold">Roast</label>
                 <select class="form-control" id="roast-search">
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
             </div>
-            <label for="submit">Coffee Name</label>
+            <label for="submit" class="text-white font-weight-bold">Coffee Name</label>
             <div class="active-cyan-4 mb-4">
                 <input id='coffee-array' class="form-control" type="text" placeholder="Search" aria-label="Search">
             </div>
-            <button id="submit-coffee" type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            <button id="submit-coffee" type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
         </div>
         <div class="col-6 float-left" id="coffees"></div>
     </div>
