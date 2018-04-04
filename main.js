@@ -3,7 +3,7 @@
 function renderCoffee(coffee) {
     var html = "<div id='myDiv' class='row col-6 float-left position-static'>";
     html += "<h2 class='d-inline-block'>" + coffee.name + "</h2>";
-    html += "<p class='text-muted d-inline-block'>" + coffee.roast + "</p>";
+    html += "<p class='text-muted d-inline-block mt-2 ml-2'>" + coffee.roast + "</p>";
     html += '</div>';
 
     return html
@@ -24,6 +24,8 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
+        } if (coffee.roast === 'all'){
+
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
