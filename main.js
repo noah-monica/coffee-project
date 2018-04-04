@@ -1,22 +1,28 @@
 "use strict";
 
-// function renderCoffee(coffee) {
-//     var html = '<tr class="coffee">';
-//     html += '<td>' + coffee.id + '</td>';
-//     html += '<td>' + coffee.name + '</td>';
-//     html += '<td>' + coffee.roast + '</td>';
-//     html += '</tr>';
-//
-//     return html;
-// }
-
 function renderCoffee(coffee) {
+
     var html = '<div class="col-8 float-left w-25">';
     html += '<h2 class="d-inline">' + coffee.name + '</h2>';
     html += "<p class='text-muted d-inline'>" + coffee.roast + "</p>";
+    var html = "<div id='myDiv' class='row col-6 float-left position-static'>";
+    html += "<h2 class='d-inline-block'>" + coffee.name + "</h2>";
+    html += "<p class='text-muted d-inline-block'>" + coffee.roast + "</p>";
+
     html += '</div>';
 
     return html
+}
+function myFunction(){
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("#input-coffee");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("h2");
+    for (i=0; i< li.length; i++){
+
+    }
+
 }
 
 function renderCoffees(coffees) {
@@ -56,7 +62,6 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'}
 ];
-
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
