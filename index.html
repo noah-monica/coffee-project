@@ -9,63 +9,62 @@
 <body>
     <h1>Coffee!</h1>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
+    <form class="col-6 col-form float-right">
+        <label for="roast-selection" class="col-6 col-form-label col-form-label-lg"></label>
+        <select id= "roast-selection" class="custom-select my-1 mr-sm-2">
+            <option>all</option>
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
-        <input id="submit" type="submit" />
+        <button id="submit" type="submit" class="btn btn-primary btn-sm btn-block my-1">Submit</button>
     </form>
+    <!--<div class="container">-->
+        <!--<div class="row float-right">-->
+            <!--<div class="col-6">-->
+                <!--<form class="form-inline">-->
+                    <!--<div class="col-8">-->
+                    <!--<label class="my-1 mr-2 font-bold" for="inlineFormCustomSelectPref">Roast</label>-->
+                    <!--<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">-->
+                        <!--<option selected>all</option>-->
+                        <!--<option value="1">Light</option>-->
+                        <!--<option value="2">Medium</option>-->
+                        <!--<option value="3">Large</option>-->
+                    <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="col-8 custom-control custom-checkbox my-1 mr-sm-2">-->
+                        <!--&lt;!&ndash;<input type="checkbox" class="custom-control-input m-4" id="customControlInline">&ndash;&gt;-->
+                       <!--<input class="form-control mr-sm-2 m-4" type="search" placeholder="" aria-label="Search">-->
+                    <!--</div>-->
+                   <!--<div class="col-8"><button type="submit" class="btn btn-primary btn-xl btn-block my-1">Submit</button>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
 
-
-    <div class="container">
-        <div class="row float-right">
-            <div class="col-6">
-                <form class="form-inline">
-                    <div class="col-8">
-                    <label class="my-1 mr-2 font-bold" for="inlineFormCustomSelectPref">Roast</label>
-                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                        <option selected>all</option>
-                        <option value="1">Light</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                    </select>
-                    </div>
-                    <div class="col-8 custom-control custom-checkbox my-1 mr-sm-2">
-                        <!--<input type="checkbox" class="custom-control-input m-4" id="customControlInline">-->
-                       <input class="form-control mr-sm-2 m-4" type="search" placeholder="" aria-label="Search">
-                    </div>
-                   <div class="col-8"><button type="submit" class="btn btn-primary btn-xl btn-block my-1">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="row float-right">
-            <div class="col-12">
-                <h1 class="m-auto ">Add a Coffee</h1>
-                <form class="form-inline">
-                    <div class="col-8">
-                    <label class="my-1 mr-2 font-bold" for="inlineFormCustomSelectPref">Roast</label>
-                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                        <option selected>all</option>
-                        <option value="1">Light</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                    </select>
-                    </div>
-                    <div class="col-8 custom-control custom-checkbox my-1 mr-sm-2">
-                        <!--<input type="checkbox" class="custom-control-input m-4" id="customControlInline">-->
-                       <input class="form-control mr-sm-2 m-4" type="search" placeholder="" aria-label="Search">
-                    </div>
-                   <div class="col-8"><button type="submit" class="btn btn-primary btn-xl btn-block my-1">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+        <!--<div class="row float-right">-->
+            <!--<div class="col-12">-->
+                <!--<h1 class="m-auto ">Add a Coffee</h1>-->
+                <!--<form class="form-inline">-->
+                    <!--<div class="col-8">-->
+                    <!--<label class="my-1 mr-2 font-bold" for="inlineFormCustomSelectPref">Roast</label>-->
+                    <!--<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">-->
+                        <!--<option selected>all</option>-->
+                        <!--<option value="1">Light</option>-->
+                        <!--<option value="2">Medium</option>-->
+                        <!--<option value="3">Large</option>-->
+                    <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="col-8 custom-control custom-checkbox my-1 mr-sm-2">-->
+                        <!--&lt;!&ndash;<input type="checkbox" class="custom-control-input m-4" id="customControlInline">&ndash;&gt;-->
+                       <!--<input class="form-control mr-sm-2 m-4" type="search" placeholder="" aria-label="Search">-->
+                    <!--</div>-->
+                   <!--<div class="col-8"><button type="submit" class="btn btn-primary btn-xl btn-block my-1">Submit</button>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
    <div id="coffees"></div>
 
     <script src="main.js"></script>
