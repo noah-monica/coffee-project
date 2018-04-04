@@ -11,9 +11,9 @@
 // }
 
 function renderCoffee(coffee) {
-    var html = '<div>';
-    html += '<h2>' + coffee.name + '</h2>';
-    html += "<p class='text-muted'>" + coffee.roast + "</p>";
+    var html = '<div class="col-8 float-left w-25">';
+    html += '<h2 class="d-inline">' + coffee.name + '</h2>';
+    html += "<p class='text-muted d-inline'>" + coffee.roast + "</p>";
     html += '</div>';
 
     return html
