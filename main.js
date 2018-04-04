@@ -2,8 +2,8 @@
 
 function renderCoffee(coffee) {
     var html = "<div id='myDiv' class='row col-6 float-left position-static'>";
-    html += "<h2 class='d-inline-block'>" + coffee.name + "</h2>";
-    html += "<p class='text-muted d-inline-block mt-2 ml-2'>" + coffee.roast + "</p>";
+    html += "<h2 class='d-inline-block text-dark'>" + coffee.name + "</h2>";
+    html += "<p class='text-light d-inline-block mt-2 ml-2 font-weight-bold'>" + coffee.roast + "</p>";
     html += '</div>';
 
     return html
@@ -21,13 +21,15 @@ function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
-    coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
-            filteredCoffees.push(coffee);
-        } if (coffee.roast === 'all'){
-
-        }
-    });
+    if (selectedRoast === 'all'){
+        filteredCoffees = coffees
+    } else {
+        coffees.forEach(function (coffee) {
+            if (coffee.roast === selectedRoast) {
+                filteredCoffees.push(coffee);
+            }
+        });
+    }
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
@@ -59,6 +61,8 @@ var coffees = [
     {id: 12, name: 'Viennese', roast: 'dark'},
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'}
+
+
 ];
 //
 function createCoffee(){
