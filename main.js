@@ -59,12 +59,13 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'}
 ];
 //
+function createCoffee(){
 var roastSearch =  document.querySelector("#roast-search").value;
 var coffeeA = document.querySelector("#coffee-array").value;
-function createCoffee(roast, name){
-    return coffees.push({name: name, roast: roast});
+    coffees.push({name: coffeeA, roast: roastSearch});
+    tbody.innerHTML = renderCoffees(coffees);
 }
-createCoffee(coffeeA, roastSearch);
+// createCoffee(coffeeA, roastSearch);
 
 
 var tbody = document.querySelector('#coffees');
