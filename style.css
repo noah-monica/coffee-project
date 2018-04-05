@@ -1,5 +1,60 @@
+@font-face {
+    /*font-family: "Sweety Donut";*/
+    /*src: url("fonts/Sweety Donut.ttf") format("truetype");*/
+    font-family: "Sweety Regular";
+    src: url("fonts/Sweety Regular.ttf") format("truetype");
+}
+
 body{
    background-color: ghostwhite;
+}
+#myDiv{
+
+}
+.coffee{
+    font-family:  'Sweety Donut', sans-serif;
+    color:#996633;
+    font-size: 96px;
+
+}
+.donut{
+    font-family: "Sweety Regular", sans-serif;
+}
+
+
+.header {
+    height: 10em;
+    position: relative;
+
+}
+
+div.header h1 {
+    margin: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+/*.header{*/
+    /*background-color:#996633;*/
+    /*opacity: .5;*/
+    /*height: 150px;*/
+    /*margin-bottom: 50px;*/
+
+}
+h2{
+    background-repeat: no-repeat;
+    border-radius: 25%;
+}
+
+h2::after{
+    background-color:
+    opacity: .5;
+}
+h1{
+     font-family: ;
 }
 .container{
     /*background-image: url("coffe-beans-background-PAKNHXV.jpg");*/
@@ -8,15 +63,16 @@ body{
 }
 .container::after{
     content: "";
-    background: url("coffee-background-PU68ZDP.jpg");
-    background-repeat: repeat;
-    opacity: 0.5;
+    background: url("cup-coffe-and-milk-P7E2KZE.jpg");
+    opacity: 0.7;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: -1;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container img{
     width: 800px;
