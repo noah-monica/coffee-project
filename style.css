@@ -8,17 +8,21 @@
 body{
    background-color: ghostwhite;
 }
-#myDiv{
+
+h2 {
+    color: #996633;
 
 }
+
 .coffee{
     font-family:  'Sweety Donut', sans-serif;
-    color:#996633;
+    color:#4d3319;
     font-size: 96px;
 
 }
 .donut{
     font-family: "Sweety Regular", sans-serif;
+    color: #4d3319
 }
 
 
@@ -30,32 +34,13 @@ body{
 
 div.header h1 {
     margin: 0;
-
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
 
-/*.header{*/
-    /*background-color:#996633;*/
-    /*opacity: .5;*/
-    /*height: 150px;*/
-    /*margin-bottom: 50px;*/
 
-}
-h2{
-    background-repeat: no-repeat;
-    border-radius: 25%;
-}
-
-h2::after{
-    background-color:
-    opacity: .5;
-}
-h1{
-     font-family: ;
-}
 .container{
     /*background-image: url("coffe-beans-background-PAKNHXV.jpg");*/
     background-repeat: no-repeat;
