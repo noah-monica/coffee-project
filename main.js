@@ -1,13 +1,17 @@
 "use strict";
 
+// ========================== HERE'S THE HTML ========================================
+
 function renderCoffee(coffee) {
     var html = "<div id='myDiv' class='row col-6 float-left position-static'>";
     html += "<h2 class='d-inline-block text-dark'>" + coffee.name + "</h2>";
-    html += "<p class='text-light d-inline-block mt-2 ml-2 font-weight-bold'>" + coffee.roast + "</p>";
+    html += "<p class='text-secondary d-inline-block mt-2 ml-2 font-weight-bold'>" + coffee.roast + "</p>";
     html += '</div>';
 
     return html
 }
+
+// ========================== FUNCTION TO RENDER COFFEES ==============================
 
 function renderCoffees(coffees) {
     var html = '';
@@ -17,6 +21,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
+//========================== FUNCTION TO FILTER AND UPDATE THE COFFEES ===============
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -33,6 +38,8 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+// ====== FUNCTION TO PULL THE DIFFERENT COFFEES WITH THE FIRST LETTERS IN INPUT ============================
+
 function keyupCoffee(){
     var input = document.getElementById("input-coffee");
     var filter = input.value.toUpperCase();
@@ -44,6 +51,8 @@ function keyupCoffee(){
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
+// ============= ARRAY OF COFFEES =========================================
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -64,7 +73,9 @@ var coffees = [
 
 
 ];
-//
+
+//===================== FUNCTION TO ADD COFFEES ==================================
+
 function createCoffee(){
 var roastSearch =  document.querySelector("#roast-search").value;
 var coffeeA = document.querySelector("#coffee-array").value;
