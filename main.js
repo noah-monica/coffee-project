@@ -1,4 +1,5 @@
-"use strict";
+(function() {
+    "use strict";
 
 // ========================== HERE'S THE HTML ========================================
 
@@ -98,3 +99,4 @@ roastSelection.addEventListener('change', updateCoffees);
 filterCoffee.addEventListener('keyup', keyupCoffee);
 submitCoffee.addEventListener('click', createCoffee);
 
+})();
